@@ -10,7 +10,9 @@
     "l1ChainID": <%=process.env.L1_CHAIN_ID%>,
     "l2ChainID": <%=process.env.L2_CHAIN_ID%>,
     "l2BlockTime": <%=process.env.L2_BLOCKTIME%>,
-  
+    "l1BlockTime": <%=process.env.L1_BLOCKTIME%>,
+
+
     "maxSequencerDrift": 600,
     "sequencerWindowSize": 3600,
     "channelTimeout": 300,
