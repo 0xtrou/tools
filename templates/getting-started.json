@@ -18,7 +18,7 @@
 
     "l2OutputOracleSubmissionInterval": 120,
     "l2OutputOracleStartingBlockNumber": 0,
-    "l2OutputOracleStartingTimestamp": "<%=process.env.L2_OUTPUT_ORACLE_TIMESTAMP%>",
+    "l2OutputOracleStartingTimestamp": <%=process.env.L2_OUTPUT_ORACLE_TIMESTAMP%>,
 
     "l2OutputOracleProposer": "<%=process.env.PROPOSER_ADDRESS%>",
     "l2OutputOracleChallenger": "<%=process.env.ADMIN_ADDRESS%>",
