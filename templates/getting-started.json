@@ -16,14 +16,14 @@
     "batchInboxAddress": "0xff00000000000000000000000000000000042069",
     "batchSenderAddress": "<%=process.env.BATCHER_ADDRESS%>",
 
-    "l2OutputOracleSubmissionInterval": 20,
+    "l2OutputOracleSubmissionInterval": 1800,
     "l2OutputOracleStartingBlockNumber": 0,
     "l2OutputOracleStartingTimestamp": <%=process.env.L2_OUTPUT_ORACLE_TIMESTAMP%>,
 
     "l2OutputOracleProposer": "<%=process.env.PROPOSER_ADDRESS%>",
     "l2OutputOracleChallenger": "<%=process.env.ADMIN_ADDRESS%>",
 
-    "finalizationPeriodSeconds": 12,
+    "finalizationPeriodSeconds": 604800,
 
     "proxyAdminOwner": "<%=process.env.ADMIN_ADDRESS%>",
     "baseFeeVaultRecipient": "<%=process.env.ADMIN_ADDRESS%>",
