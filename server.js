@@ -1,7 +1,7 @@
 require('dotenv').config()
 let ejs = require('ejs');
 const fs = require('fs');
-const { exec } = require('child_process');
+// const { exec } = require('child_process');
 const { Web3 } = require('web3');
 
 /*
@@ -62,7 +62,7 @@ async function getLatestFinalizedBlockNumber() {
 
 function prepareOPStack() {
   buildGettingStarted();
-  buildHardhatConfig();
+  // buildHardhatConfig();
   return (0);
 }
 
