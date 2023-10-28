@@ -8,7 +8,7 @@
     "l2BlockTime": <%=process.env.L2_BLOCKTIME%>,
     "l1BlockTime": <%=process.env.L1_BLOCKTIME%>,
 
-    "maxSequencerDrift": 600,
+    "maxSequencerDrift": 1200,
     "sequencerWindowSize": 3600,
     "channelTimeout": 300,
 
@@ -16,7 +16,7 @@
     "batchInboxAddress": "0xff00000000000000000000000000000000042069",
     "batchSenderAddress": "<%=process.env.BATCHER_ADDRESS%>",
 
-    "l2OutputOracleSubmissionInterval": 120,
+    "l2OutputOracleSubmissionInterval": 20,
     "l2OutputOracleStartingBlockNumber": 0,
     "l2OutputOracleStartingTimestamp": <%=process.env.L2_OUTPUT_ORACLE_TIMESTAMP%>,
 
