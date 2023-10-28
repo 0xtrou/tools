@@ -1,8 +1,9 @@
 #!/bin/bash
 export IMPL_SALT=$(openssl rand -hex 32)
 export LATEST_BLOCK=$(cast block finalized --rpc-url $ETH_RPC_URL --json)
-export L2_OUTPUT_ORACLE_TIMESTAMP=$(echo $LATEST_BLOCK | jq -r '.timestamp')
 export L1STARTINGBLOCKTAG=$(echo $LATEST_BLOCK | jq -r '.hash')
+L2_OUTPUT_ORACLE_TIMESTAMP=$(echo $LATEST_BLOCK | jq -r '.timestamp')
+export L2_OUTPUT_ORACLE_TIMESTAMP=$((L2_OUTPUT_ORACLE_TIMESTAMP))
 
 echo "=========VALUES========="
 echo $IMPL_SALT
