@@ -1,4 +1,8 @@
 #!/bin/bash
+export IMPL_SALT=$(openssl rand -hex 32)
+export LATEST_BLOCK=$(cast block finalized --rpc-url https://opbnb-testnet-rpc.bnbchain.org --json)
+export L2_OUTPUT_ORACLE_TIMESTAMP=$(echo $LATEST_BLOCK | jq -r '.timestamp')
+export L1STARTINGBLOCKTAG=$(echo $LATEST_BLOCK | jq -r '.hash')
 
 if [ ! -f "/opstack/optimism/op-node/genesis.json" ]; then
     echo "Preparing files..."
