@@ -18,7 +18,6 @@ if [ ! -f "/opstack/optimism/op-node/genesis.json" ]; then
     cd /opstack/tools/
     node server.js
     cp /opstack/tools/builds/getting-started.json /opstack/optimism/packages/contracts-bedrock/deploy-config/getting-started.json
-    cp /opstack/tools/builds/hardhat.config.ts /opstack/optimism/packages/contracts-bedrock/hardhat.config.ts
     echo "Files Ready"
 
     # Deploy Contracts
