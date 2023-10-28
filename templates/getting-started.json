@@ -8,7 +8,7 @@
     "l2BlockTime": <%=process.env.L2_BLOCKTIME%>,
     "l1BlockTime": <%=process.env.L1_BLOCKTIME%>,
 
-    "maxSequencerDrift": 1200,
+    "maxSequencerDrift": 600,
     "sequencerWindowSize": 3600,
     "channelTimeout": 300,
 
@@ -16,7 +16,7 @@
     "batchInboxAddress": "0xff00000000000000000000000000000000042069",
     "batchSenderAddress": "<%=process.env.BATCHER_ADDRESS%>",
 
-    "l2OutputOracleSubmissionInterval": 1800,
+    "l2OutputOracleSubmissionInterval": 120,
     "l2OutputOracleStartingBlockNumber": 0,
     "l2OutputOracleStartingTimestamp": <%=process.env.L2_OUTPUT_ORACLE_TIMESTAMP%>,
 
@@ -37,11 +37,11 @@
     "l1FeeVaultWithdrawalNetwork": 0,
     "sequencerFeeVaultWithdrawalNetwork": 0,
 
-    "gasPriceOracleOverhead": 2100,
-    "gasPriceOracleScalar": 1000000,
+    "gasPriceOracleOverhead": 188,
+    "gasPriceOracleScalar": 684000,
 
     "enableGovernance": true,
-    "governanceTokenSymbol": "l3BNB",
+    "governanceTokenSymbol": "L3BNB",
     "governanceTokenName": "Layer 3 BNB",
     "governanceTokenOwner": "<%=process.env.ADMIN_ADDRESS%>",
 
@@ -50,8 +50,8 @@
     "l2GenesisRegolithTimeOffset": "0x0",
 
     "eip1559Denominator": 50,
+    "eip1559Elasticity": 6,
     "eip1559DenominatorCanyon": 250,
-    "eip1559Elasticity": 10,
 
     "systemConfigStartBlock": 0,
 
