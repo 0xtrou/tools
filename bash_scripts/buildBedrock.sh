@@ -7,7 +7,6 @@ export L2_OUTPUT_ORACLE_TIMESTAMP=$((L2_OUTPUT_ORACLE_TIMESTAMP))
 
 echo "=========VALUES========="
 echo $IMPL_SALT
-echo $LATEST_BLOCK
 echo $L2_OUTPUT_ORACLE_TIMESTAMP
 echo $L1STARTINGBLOCKTAG
 echo "=========VALUES========="
