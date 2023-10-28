@@ -9,7 +9,7 @@
     "l1BlockTime": <%=process.env.L1_BLOCKTIME%>,
 
     "maxSequencerDrift": 100,
-    "sequencerWindowSize": 3600,
+    "sequencerWindowSize": 7200,
     "channelTimeout": 300,
 
     "p2pSequencerAddress": "<%=process.env.SEQUENCER_ADDRESS%>",
