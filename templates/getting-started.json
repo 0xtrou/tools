@@ -44,8 +44,8 @@
     "governanceTokenName": "Layer 3 BNB",
     "governanceTokenOwner": "<%=process.env.ADMIN_ADDRESS%>",
 
-    "l2GenesisBlockGasLimit": "0x1c9c380",
-    "l2GenesisBlockBaseFeePerGas": "0x3b9aca00",
+    "l2GenesisBlockGasLimit": "0x8F0D180",
+    "l2GenesisBlockBaseFeePerGas": "0x2FAF080",
     "l2GenesisRegolithTimeOffset": "0x0",
 
     "eip1559Denominator": 8,
