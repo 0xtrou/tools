@@ -23,7 +23,7 @@
     "l2OutputOracleProposer": "<%=process.env.PROPOSER_ADDRESS%>",
     "l2OutputOracleChallenger": "<%=process.env.ADMIN_ADDRESS%>",
 
-    "finalizationPeriodSeconds": 12,
+    "finalizationPeriodSeconds": 604800,
 
     "proxyAdminOwner": "<%=process.env.ADMIN_ADDRESS%>",
     "baseFeeVaultRecipient": "<%=process.env.ADMIN_ADDRESS%>",
