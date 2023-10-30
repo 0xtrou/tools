@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -f "/assets/genesis.json" ] && [ -f "/assets/rollup.json" ]; then
+if [ -f "/opstack/op-geth/genesis.json" ] && [ -f "/opstack/optimism/op-node/rollup.json" ]; then
     echo "Preparing files..."
     cp -R /opstack-temp/* /opstack/
 
@@ -20,6 +20,6 @@ if [ -f "/assets/genesis.json" ] && [ -f "/assets/rollup.json" ]; then
     echo "Build Successful ✅"
     exit 0
 else
-    echo "Found genesis file. Not rebuilding."
+    echo "Not found genesis file. Not rebuilding."
     exit 0
 fi
